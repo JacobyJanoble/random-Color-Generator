@@ -11,19 +11,7 @@
         <button onclick="getNewColor()">Get New Color</button>
     </div>
 
-    <script type="text/javascript">
-        function getNewColor() {
-            const symbols,color;
-            symbols = "0123456789ABCDEF";
-        
-            color = "#";
-            for(const i=0; i<6; i++){
-                color = color + symbols[Math.floor(Math.random() * 16)];
-            }
-            document.body.style.background = color;
-            document.getElementById("hex").innerHTML = color;
-        }
-        </script>
+    <script src="app.js"></script>
 
 </body>
 </html>
